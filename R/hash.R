@@ -20,7 +20,7 @@ decode = function(hash_str, settings) {
 		parts[1]
 	)
 
-	if(hashid == '') return('')
+	if(hashid == '') stop("decode: invalid hashid, cannot decode")
 	lottery = substr(hashid, 1, 1)
 	hashid = substr(hashid, 2, nchar(hashid))
 
@@ -38,10 +38,10 @@ decode = function(hash_str, settings) {
 	rehash = tryCatch({
 		encode(unhashed_parts, settings)
 	}, error = function(e) {
-		stop("decode: invalid hash, cannot decode")
+		stop("decode: invalid hashid, cannot decode")
 	})
 	if(!all(hash_str == rehash)) {
-		stop("decode: invalid hash, cannot decode")
+		stop("decode: invalid hashid, cannot decode")
 	}
 
 	return(unhashed_parts)

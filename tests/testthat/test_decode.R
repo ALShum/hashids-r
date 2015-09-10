@@ -87,7 +87,7 @@ test_that("Test decoding invalid hashid", {
 		alphabet = 'abcdefghijklmnop'
 	)
 	expect_error(decode('qrstuvwxyz', h),
-	'decode: invalid hash, cannot decode')
+	'decode: invalid hashid, cannot decode')
 })
 
 test_that("Test decode without standard separators", {
@@ -116,7 +116,7 @@ test_that("Invalid hash id", {
 	invalid_hash = substr(hashed, 2, nchar(hashed))
 	expect_error(
 		decode(invalid_hash, h),
-		"decode: invalid hash, cannot decode")
+		"decode: invalid hashid, cannot decode")
 })
 
 test_that("Test decode_hex", {
@@ -141,6 +141,6 @@ test_that("test invalid decode_hex", {
 	expect_error(decode_hex('', h), 'decode: invalid hashid')
 	expect_error(
 		decode_hex('WxMLpERDrmh25Lp4L3xEfM6WovWYO3IjkRMKR2ogCMVlqt1WK8jKq7OsEp1Vi2p', h),
-		'decode: invalid hash, cannot decode'
+		'decode: invalid hashid, cannot decode'
 	)
 })
