@@ -1,6 +1,6 @@
 Package: hashids
 Title: Generate Short Unique YouTube-Like IDs (hashes) From Integers
-Version: 0.1.0.9000
+Version: 0.9.0
 Authors@R: c(
 	person("Alex", "Shum", email = "Alex@ALShum.com", role = c("aut", "cre")), 
 	person("Ivan", "Akimov", email = "ivan@barreleye.com", role= c("aut"), comment = "original author of hashids -- implemented in javascript"), 
