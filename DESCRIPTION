@@ -11,3 +11,4 @@ BugReports: https://github.com/ALShum/hashids-r/issues
 Depends: R (>= 3.2.2)
 License: MIT
 LazyData: true
+Suggests: testthat
