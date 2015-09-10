@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ALShum/hashids-r.svg?branch=master)](https://travis-ci.org/ALShum/hashids-r)
+
 # Hashids in R
 
 An R port of the [hashids library](http://www.hashids.org).  hashids generate YouTube-like ids (hashes) from integers or vector of integers.  Hashes generated from integers are relatively short, unique and non-seqential and can be used to generate unique ids for URLs and hide database row numbers from the user.  By default hashids will avoid generating common English cursewords by preventing certain letters being next to each other.
@@ -18,7 +20,7 @@ For example, integers like `1`, `2` and `3` will be encoded as strings like `NV`
 * hashids is NOT CRYPTOGRAPHICALLY SECURE -- DO NOT USE TO ENCODE PASSWORDS!
 
 ## Other restrictions
-1. Can only encode integers -- this is to prevent you from doing something stupid.  Like sensitive information.
+1. Can only encode integers -- this is to prevent you from doing something stupid.  Like encoding sensitive information.
 2. Integers must be non-negative.
 
 ## Installing
