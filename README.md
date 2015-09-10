@@ -46,5 +46,8 @@ Decode follows a similar workflow:
 ## About
 hashids was originally written by Ivan Akimov.  This version hashids was translated along with some of the unit tests from python version of hashids written by David Aurelio.  For more information please go to http://www.hashids.org.
 
+## Compatability
+Compatible with version 1.0.* of the javascript version of hashids.
+
 ## Contact
-Does my code suck?  Contact me and tell me!  [@notalexshum](http://twitter.com/notalexshum) on twitter more details @ http://www.ALShum.com.
+Does my code suck?  Contact me and tell me!  [@notalexshum](http://twitter.com/notalexshum) on twitter more info about me @ http://www.ALShum.com.
