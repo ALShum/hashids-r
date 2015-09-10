@@ -25,6 +25,18 @@ For example, integers like `1`, `2` and `3` will be encoded as strings like `NV`
 Install using devtools.  If you don't have devtools install using `install.packages('devtools')` from your R session.  Install using `devtools::install_github('ALShum/hashids-r')`.
 
 ## Example
+Set your salt, min_length and any other settings using the `hashid_settings` function -- this will generate a list of important parameters for encoding and decoding:
+
 `h = hashid_settings(salt = 'this is my salt', min_length = 5)`
+
+Encode requires an integer and the settings as a list of parameters:
+
 `encode(1234, h ) #"ABBQA"`
+
 `encode(c(1, 2, 3, 4), h) #"agHLu9hm"`
+
+Decode follows a similar workflow:
+
+`decode("ABBQA", h) #1234`
+
+`decode("agHLu9hm", h) #c(1, 2, 3, 4)`
