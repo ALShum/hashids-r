@@ -40,3 +40,6 @@ Decode follows a similar workflow:
 `decode("ABBQA", h) #1234`
 
 `decode("agHLu9hm", h) #c(1, 2, 3, 4)`
+
+## About
+hashids was originally written by Ivan Akimov.  This R version of hashids was translated along with some of the unit tests from python version of hashids written by David Aurelio.  For more information please go to http://www.hashids.org.
