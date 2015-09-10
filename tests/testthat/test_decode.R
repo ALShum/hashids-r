@@ -64,6 +64,13 @@ test_that("decode with salt, custom alphabet", {
 	expect_equal(decode('Jz3fR', h), c(99, 25))
 })
 
+test_that("decode sequential and identical vectors", {
+	h = hashid_settings(salt = 'this is my salt')
+	expect_equal(decode('agHLu9hm', h), c(1, 2, 3, 4))
+	expect_equal(decode('aQtEhBub', h), c(4, 3, 2, 1))
+	expect_equal(decode('2bHEH5HY', h), c(1, 1, 1, 1))
+})
+
 test_that("Decode with all non-default parameters", {
 	h = hashid_settings(salt = 'arbitrary salt', 
 		min_length = 16,

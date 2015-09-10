@@ -1,5 +1,5 @@
 Package: hashids
-Title: Generate Short Unique YouTube-Like IDs (hashes) From Integers.
+Title: Generate Short Unique YouTube-Like IDs (hashes) From Integers
 Version: 0.1.0.9000
 Authors@R: c(
 	person("Alex", "Shum", email = "Alex@ALShum.com", role = c("aut", "cre")), 
@@ -9,6 +9,6 @@ Description: An R port of the hashids library.  hashids generates YouTube-like h
 URL: https://github.com/ALShum/hashids-r/, http://hashids.org
 BugReports: https://github.com/ALShum/hashids-r/issues
 Depends: R (>= 3.2.2)
-License: MIT
+License: MIT + file LICENSE
 LazyData: true
 Suggests: testthat

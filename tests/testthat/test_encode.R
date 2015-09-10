@@ -38,6 +38,13 @@ test_that("encode with salt", {
 	expect_equal(encode(1337, h), 'VOd')
 })
 
+test_that("encode sequential and identical vectors", {
+	h = hashid_settings(salt = 'this is my salt')
+	expect_equal(encode(c(1, 2, 3, 4), h), 'agHLu9hm')
+	expect_equal(encode(c(4, 3, 2, 1), h), 'aQtEhBub')
+	expect_equal(encode(c(1, 1, 1, 1), h), '2bHEH5HY')
+})
+
 test_that("encode with no salt, custom alphabet", {
 	h = hashid_settings(
 		salt = '',
