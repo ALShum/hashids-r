@@ -18,7 +18,7 @@ For example, integers like `1`, `2` and `3` will be encoded as strings like `NV`
 * hashids is NOT CRYPTOGRAPHICALLY SECURE -- DO NOT USE TO ENCODE PASSWORDS!
 
 ## Other restrictions
-1. Can only encode integers -- this is to prevent you from doing something stupid.  Like encoding passwords.
+1. Can only encode integers -- this is to prevent you from doing something stupid.  Like sensitive information.
 2. Integers must be non-negative.
 
 ## Installing
