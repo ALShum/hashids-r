@@ -1,4 +1,4 @@
-Initial submit of hashids package.
+Resubmit: redid title case
 
 ## Test environments
 * Locally: OS X, R 3.2.2
