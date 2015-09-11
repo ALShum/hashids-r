@@ -28,10 +28,15 @@ Install using devtools.  If you don't have devtools install using `install.packa
 
 ## Summary
 The following are the most relevant functions:
+
 1. `hashid_settings`: used to set minimum length, salt, custom alphabet and custom guard.
+
 2. `encode`: gives encoded string given integer and settings list from `hashid_settings`.
+
 3. `decode`: gives integer given encoded string and settings list from `hashid_settings`.
+
 4. `encode_hex`: similar to `encode` but works with hexadecimal.
+
 5. `decode_hex`: similar to `decode` but works with hexadecimal.
 
 ## Example
