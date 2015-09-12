@@ -24,7 +24,7 @@ For example, integers like `1`, `2` and `3` will be encoded as strings like `NV`
 2. Integers must be non-negative.
 
 ## Installing
-Install using devtools.  If you don't have devtools install using `install.packages('devtools')` from your R session.  Install using `devtools::install_github('ALShum/hashids-r')`.
+This package is now on CRAN!  Install using `install.packages("hashids")`.  Alteratively you can install using devtools to install the github version.  If you don't have devtools install using `install.packages('devtools')` from your R session.  Install using `devtools::install_github('ALShum/hashids-r')`.
 
 ## Summary
 The following are the most relevant functions:
