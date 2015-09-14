@@ -1,3 +1,7 @@
+#' @useDynLib hashids
+#' @importFrom Rcpp sourceCpp
+NULL
+
 #' Decodes a hashid into the original integer or integer vector
 #'
 #' @param hash_str hashid string to decode into integer or integer vector

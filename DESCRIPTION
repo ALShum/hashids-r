@@ -1,14 +1,19 @@
 Package: hashids
 Title: Generate Short Unique YouTube-Like IDs (Hashes) from Integers
-Version: 0.9.0.9000
+Version: 0.9.0.9999
 Authors@R: c(
 	person("Alex", "Shum", email = "Alex@ALShum.com", role = c("aut", "cre")), 
 	person("Ivan", "Akimov", email = "ivan@barreleye.com", role= c("aut"), comment = "original author of hashids -- implemented in javascript"), 
 	person("David", "Aurelio", email = "dev@david-aurelio.com", role = c("ctb"), comment = "implemented hashids in python 2 and 3"))
-Description: An R port of the hashids library.  hashids generates YouTube-like hashes from integers or vector of integers.  Hashes generated from integers are relatively short, unique and non-seqential.  hashids can be used to generate unique ids for URLs and hide database row numbers from the user.  By default hashids will avoid generating common English cursewords by preventing certain letters being next to each other.  hashids are not one-way: it is easy to encode an integer to a hashid and decode a hashid back into an integer.
+Description: An R port of the hashids library.  hashids generates YouTube-like hashes from integers or vector of integers.  Hashes generated from integers are relatively short, unique and non-sequential.  hashids can be used to generate unique ids for URLs and hide database row numbers from the user.  By default hashids will avoid generating common English cursewords by preventing certain letters being next to each other.  hashids are not one-way: it is easy to encode an integer to a hashid and decode a hashid back into an integer.
 URL: https://github.com/ALShum/hashids-r/, http://hashids.org
 BugReports: https://github.com/ALShum/hashids-r/issues
 Depends: R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
-Suggests: testthat
+LinkingTo:
+    Rcpp
+Imports:
+    Rcpp
+Suggests: 
+    testthat
