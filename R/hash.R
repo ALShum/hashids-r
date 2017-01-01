@@ -416,16 +416,19 @@ split = function(string, splitters) {
 #' @return Unhashed integer
 #'
 unhash = function(hashed, alphabet) {
-	hashed_len = nchar(hashed)
 	alphabet_len = nchar(alphabet)
 	alphabet_vec = strsplit(alphabet, split="")[[1]]
 	hashed_vec = strsplit(hashed, split="")[[1]]
 
-	number = 0
-	for(i in 1:hashed_len) {
-		position = which(alphabet_vec == hashed_vec[i]) - 1
-		number = number + (position * alphabet_len ** (hashed_len - i))
-	}
-
-	return(number)
+	Reduce(
+		function(carry, item) {
+			carry * alphabet_len + item
+		},
+		lapply(
+			hashed_vec,
+			function(item) {
+				which(alphabet_vec == item) - 1
+			}
+		)
+	)
 }
