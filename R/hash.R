@@ -349,6 +349,7 @@ hash = function(number, alphabet) {
 		hashed = c(alphabet_vec[hash_idx], hashed)
 		number = floor(number / alphabet_len)
 	}
+	
 	return(paste(hashed, collapse = ""))
 }
 
